@@ -39,9 +39,9 @@ async function createTodos(todoList) {
             todoList.forEach(todo => console.log(todo));
         }
         if (answer.Select == "Veiw") {
-            console.log(chalk.bgCyanBright("***To Do List***"));
+            console.log(chalk.bgGreenBright("***To Do List***"));
             todoList.forEach(todo => console.log(chalk.magentaBright(todo)));
-            console.log(chalk.bgCyanBright("******************"));
+            console.log(chalk.bgGreenBright("******************"));
         }
         if (answer.Select == "Remove") {
             let removeTodo = await inquirer.prompt({
@@ -55,7 +55,7 @@ async function createTodos(todoList) {
             todoList.forEach(todo => console.log(todo));
         }
         if (answer.Select == "Exit") {
-            console.log(chalk.greenBright("Thank you for using this application"));
+            console.log(chalk.bgBlueBright("Thank you for using this application"));
             console.log(chalk.redBright("Exiting...."));
             break;
         }
